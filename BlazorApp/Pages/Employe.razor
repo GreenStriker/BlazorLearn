@@ -1,0 +1,37 @@
+﻿@page "/fetchdata"
+
+@inherits EmployeListBase
+
+<h1>Employe Information</h1>
+
+<p>This component demonstrates fetching data from a API</p>
+
+@if (employes == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in employes)
+            {
+                <tr>
+                    <td>@item.EmployeID</td>
+                    <td>@item.Name</td>
+                    <td>@item.Salary</td>
+                    <td>@item.Age</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/BlazorApplication.Api
+/Blazor.Models/bin/Debug/netstandard2.0
+/Blazor.Models/obj
+/BlazorApp/bin/Debug/netcoreapp3.1
+/BlazorApplication.Api/bin/Debug/netcoreapp3.1
+/BlazorApplication.Api/Migrations
+/BlazorApplication.Api/obj
